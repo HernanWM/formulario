@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formulario__container" id="contacto">
+        <div class="container">
+            <div class="formulario_box">
+                <div class="titulo">
+                    <h4>CONVERSEMOS_</h4>
+                </div>
+                <form action="" class="formulario" id="formulario">
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre_">
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+    
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo_">
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+        
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono"  placeholder="Telefono_">
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros, comenzar con 569</p>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__mensaje">
+                        <div class="formulario__grupo-input">
+                            <textarea type="text" name="mensaje" id="mensaje" placeholder="MENSAJE_" rows="3"></textarea>
+                        </div>
+                        <p class="formulario__input-error">Por favor introducir un mensaje</p>
+                    </div>
+    
+                    <!-- <textarea placeholder="MENSAJE_" rows="3" ></textarea> -->
+        
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                    </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Gracias! el formulario fue enviado exitosamente</p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
